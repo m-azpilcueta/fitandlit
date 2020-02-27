@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <h1>Fit&Lit</h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Zona Rutinas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="my-form">
+                <input type="text" value="" placeholder="Nombre" id="nombre">
+                <input type="email" value="" placeholder="Email" id="email">
+                <br>
+                <select name="sexo" id="sexo" >
+                    <option value="select">Seleccione</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <select name="ejercicio" id="ejercicio" >
+                    <option value="select">Actividad Física</option>
+                    <option value="sedentario">Sedentario (Poco o nada de ejercicio)</option>
+                    <option value="leve">Levemente Activo (Ejercicio 1-3 veces a la semana)</option>
+                    <option value="moderado">Activo (Ejercicio 3-5 veces a la semana)</option>
+                    <option value="mucho">Muy Activo (Ejercicio 6-7 veces a la semana)</option>
+                    <option value="ecto">Intenso (Ectomorfos o ejercicio muy intenso 2 o más horas diarias, trabajo físico...)</option>
+                </select>
+                <br>
+                <input type="text" value="" placeholder="Estatura (cm)" id="estatura">
+                <input type="text" value="" placeholder="Peso (kg)" id="peso" >
+                <br>
+                <input type="text" value="" placeholder="Edad" id="edad">   
+                <button onclick="mostrarValores()" class="btn">Calcular</button>
+            </div>    
+            <div class="resultados">
+                <div class="met-basal">
+                    <h2>Metabolismo Basal</h2>
+                    <input type="text" onkeypress="return false;" id="valorMB">
+                </div>
+                <div class="cal-mant">
+                    <h2>Calorías de Mantenimiento</h2>
+                    <input type="text" onkeypress="return false;" id="valorMant">
+                </div>   
+            </div>
+            <div id="enlace-dieta"></div>
+        </div>
+
+        <footer>Copyright &copy; 2020 Fit&Lit</footer>
+        
+        <script src="main.js"></script>
+    </body>
+</html>

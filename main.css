@@ -1,0 +1,153 @@
+*{
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+body{
+    background: #2B303A;
+    margin: 0;
+}
+
+.container .navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.container .navigation ul{
+    display: inherit;
+}
+
+.navigation a{
+    color: #F49F0A;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container .navigation li{
+    padding-left: 2em;
+    padding-right: 2em; 
+}
+
+.container h1{
+    font-size: 60px;
+    margin-bottom: 0px;
+    color: #F49F0A;
+}
+
+.my-form{
+    margin-top: 20px;
+    margin-bottom: 40px;    
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.my-form input{
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 15px;
+    background: none;
+    border: 2px solid rgb(199, 196, 196);
+    padding-left: 10px;
+    text-align: left;
+    color: whitesmoke;
+}
+
+.my-form input::-webkit-input-placeholder{
+    text-align: left;
+    color: whitesmoke;
+}
+
+.resultados {
+    display: flex;
+    justify-content: center;
+}
+
+.resultados input {
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 15px;
+    background: none;   
+    border: 2px solid rgb(199, 196, 196);
+    color: whitesmoke;
+}
+
+#sexo option, #ejercicio option{
+    background-color: #2B303A;
+}
+
+#sexo, #ejercicio {
+    width: 314px;
+    font-size: 16px;
+    height: 36px;
+    margin: 5px;
+    border-radius: 15px;
+    padding-left: 6px;
+    background: none;
+    border: 2px solid rgb(199, 196, 196);
+    color: whitesmoke;
+}
+
+.btn {
+    margin: 5px;
+    width: 314px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1px;
+    background-color: #F49F0A   ;
+    border: none;
+    border-radius: 15px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    color: whitesmoke;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.met-basal h2, .cal-mant h2{
+    margin-bottom: 5px;
+    color: whitesmoke;
+}
+
+#enlace-dieta{
+    margin-top: 30px;
+}
+
+#enlace-dieta a{
+    color: #F49F0A;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 420px){
+    .resultados{
+        display:flex;
+        flex-direction:column;
+        
+    }
+
+    footer{
+        visibility:hidden;
+    }
+
+    #enlace-dieta{
+        margin-bottom: 100px;
+    }
+
+}
+
+
+
+
+
